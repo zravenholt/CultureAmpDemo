@@ -1,0 +1,328 @@
+en:
+  date:
+    formats:
+      default: "%d/%m/%Y"
+
+  dialog:
+    "yes": "Yes"
+    "no": "No"
+
+  language: "Language"
+
+  comparisons:
+    types:
+      current_survey: 'This survey'
+      survey: 'Other surveys'
+      benchmark: 'Benchmark'
+
+  restricted_actions:
+    masquerade:
+      opening: "You're about to masquerade!"
+      disclaimer_html: "Masquerading is a restricted action. Under compliance of the <a href='https://cultureamp.atlassian.net/wiki/spaces/LEGAL/pages/473268320/GDPR+Product+Changes'>General Data Protection Regulation</a>, we need to understand your reason for masquerading."
+    default:
+      opening:
+        account: "%{user_name}, you are performing a restricted action on the account %{account_name}"
+        survey: "%{user_name}, you are performing a restricted action on the account %{account_name} for the survey %{survey_name}"
+      disclaimer: "To comply with the General Data Protection Regulation (GDPR) please enter a reason for performing this action. This reason will be logged for auditing purposes. Please provide as much information as possible to justify performing this action"
+
+  dashboard:
+    factor:
+      promoter: This is the percentage of responses that averaged above 4.0 for questions in this factor.
+      passive: This is the percentage of responses that averaged between 3.0-4.0 for questions in this factor.
+      detractor: This is the percentage of responses that averaged below 3.0 for questions in this factor.
+
+    show:
+      to:
+        now: Now
+      from:
+        year1: year
+        month6: 6 months
+        month3: 3 months
+        month1: month
+        week2: 2 weeks
+        week1: week
+
+  dashboard_factors:
+    distribution:
+      nil: ''
+      zero: Flat Distribution
+      plus_low: <em>Low</em> Distribution
+      plus_medium: <em>Moderate</em> Distribution
+      plus_high: <em>High</em> Distribution
+
+  driver_analyses:
+    distribution:
+      nil: ''
+      zero: ''
+      plus_low: slightly
+      plus_medium: moderately
+      plus_high: significantly
+    score:
+      none: ''
+      low: Low
+      medium: Moderate
+      high: High
+      c0: None
+      c1: Low
+      c2: Moderate
+      c3: Strong
+      c4: Very Strong
+      c5: Extreme
+    correlation:
+      cnone:
+        label: n/a
+        tooltip_title: Insignificant Driver
+        tooltip_content_html: This driver had a no or little impact on the %{index} index. High or low scores on this question had limited correlation to the %{index} score.
+      c0:
+        label: n/a
+        tooltip_title: Insignificant Driver
+        tooltip_content_html: This driver had a no or little impact on the %{index} index. High or low scores on this question had limited correlation to the %{index} score.
+      c1:
+        label: Low
+        tooltip_title: Low Driver
+        tooltip_content_html: Low Drivers have a low impact (correlation) on the %{index} index. High or low scores on this question had limited correlation to the %{index} score.
+      c2:
+        label: Moderate
+        tooltip_title: Moderate Driver
+        tooltip_content_html: Moderate Drivers have a strong impact (correlation) on the %{index} index.
+      c3:
+        label: Strong
+        tooltip_title: Strong Driver
+        tooltip_content_html: Strong Drivers have a higher impact (correlation) on the %{index} index. Higher scores on this question are strongly correlated with a high %{index} score.
+      c4:
+        label: Very Strong
+        tooltip_title: Very Strong Driver
+        tooltip_content_html: Strong Drivers have a higher impact (correlation) on the %{index} index. Higher scores on this question are strongly correlated with a high %{index} score.
+      c5:
+        label: Extreme
+        tooltip_title: Extremely Strong Driver
+        tooltip_content_html: Extremely Strong Drivers have a higher impact (correlation) on the %{index} index. Higher scores on this question are strongly correlated with a high %{index} score.
+      cindex:
+        label: n/a
+        tooltip_title: Not Applicable
+        tooltip_content_html: Driver questions are ones that have a high impact on the %{index} score. As this question is part of %{index}, it is not included as a driver.
+
+  exit_dashboard:
+    summary:
+      type-5: All disagree ✘
+      type-4: Most disagree ✘
+      type-3: Most disagree ✘
+      type-2: Some disagree ✘
+      type-1: Very few agree ✘
+      type0:  Neutral •
+      type1:  Very few agree ✔
+      type2:  Some agree ✔
+      type3:  Most agree ✔
+      type4:  Most agree ✔
+      type5:  All agree ✔
+
+      plus_low:    slightly
+      plus_medium: moderately
+      plus_high:   significantly
+
+  exit_responses:
+    theme:
+      score-1: Unanswered
+      score1: <em>Strongly</em> Disagree
+      score2: Disagree
+      score3: Neutral
+      score4: Agree
+      score5: <em>Strongly</em> Agree
+
+  report_sharing:
+    form:
+      report_view:
+        participation:
+          label: Participation
+          description: Participation Report View only
+          help_text:
+            report view allows users to monitor response rates without access to survey results.
+        standard:
+          label: Standard
+          description: Participation, Insight, Question Views, and Take Action
+          help_text:
+            report views allow users to monitor response rates in the Participation report, explore key survey results with
+            the Insight report view and more detailed results in the Question report view.
+            These views are typically allocated to executives, managers, and employees.
+        advanced:
+          label: Advanced
+          description: All Report Views
+          help_text:
+            report views allow further exploration of data. These views are
+            typically reserved for HR / People Ops teams and users with an
+            Organizational Development role.
+      report_view_lifecycle:
+        participation:
+          label: Participation
+          description: Participation Report View only
+          help_text:
+            report view allows users to monitor response rates without access to survey results.
+        standard:
+          label: Standard
+          description: Insight and Question Views
+          help_text:
+            report views allow users to explore key survey results with the Insight report view and more detailed
+            results in the Question report view. These views are typically allocated to executives, managers and
+            employees.
+        advanced:
+          label: Advanced
+          description: All Report Views
+          help_text:
+            report views allow further exploration of data. These views are
+            typically reserved for HR / People Ops teams and users with an
+            Organizational Development role.
+
+  surveys:
+    survey:
+      engagement:
+        completed_html:
+          one: "<h4>You've completed</h4><h2>1 time</h2>"
+          other: "<h4>You've completed</h4><h2>%{count} times</h2>"
+        description: "This survey measures employee engagement and provides an opportunity for %{name} employees to provide valuable feedback on their workplace."
+
+      exit:
+        current_html:
+          zero: "<h4>No current exits</h4>"
+          one: "<h4>One current exit</h4>"
+          other: "<h4>%{count} current exits</h4>"
+        description: "This survey evaluates the employees that are exiting %{name} to give insights on turnover, talent retention and company culture."
+
+      onboard:
+        current_html:
+          zero: "<h4>No current onboard processes</h4>"
+          one: "<h4>One current onboard processes</h4>"
+          other: "<h4>%{count} current onboard processes</h4>"
+        description: "This survey is designed for new employees at %{name}. It aims to gain insights into what attracts new talent to the organization and the early employee experience working here."
+
+    resend:
+      email_not_found: That email address did not match one in the system. Make sure you are using your email address for your company.
+      not_included: This employee is not currently active in the survey.
+
+  survey_support:
+    flashes:
+      alert_email_not_found_html:
+        The email address &quot;%{email}&quot; was not found in the system. If you believe
+        this is in error, contact %{email_support}.
+      alert_resend_successful_html: A new invitation has been sent to <em>%{email}</em> (if their survey response is yet to be submitted).
+      alert_reset_successful_html: The response has been reset and a new invitation sent to <em>%{email_or_name}</em>.
+      alert_not_included_html: Employee <em>%{email}</em> is not currently active in the survey.
+
+  snap:
+    factorchart:
+      discussion:
+        nil:          <span class='insufficient'>There aren't enough responses in this period to gauge the rate of change.</span>
+        zero:         Indicators on <em class='name'>%{name}</em> are <em>stable</em>.
+        plus_low:     <em class='name'>%{name}</em> is slightly <em class='improving'>improving</em>.
+        plus_medium:  <em class='name'>%{name}</em> is <em class='improving'>improving</em>. Responses have shown an average increase of <em>+%{delta}</em>.
+        plus_high:    <em class='name'>%{name}</em> shows a <em class='improving-significant'>significant improvement</em>. Responses have shown an average increase of <em>+%{delta}</em>.
+        minus_low:    <em class='name'>%{name}</em> is slightly <em class='declining'>declining</em>.
+        minus_medium: <em class='name'>%{name}</em> is <em class='declining'>declining</em>. Responses have shown an average decrease of <em>%{delta}</em>.
+        minus_high:   <em class='name'>%{name}</em> shows a <em class='declining-significant'>significant decline</em>. Responses have shown an average decrease of <em>%{delta}</em>.
+
+    quality:
+      employees:
+        invited: "%{total} employees invited."
+        responded: "%{total} employees have responded."
+
+      description:
+        nil:         Waiting for more responses.
+        zero:        No responses yet.
+        plus_low:    The participation rate of %{rate}% is <em title='Any participation below 60% is considered low.'>low</em>.
+        plus_medium: The participation rate of %{rate}% is <em title='We treat participation of between 60% to 80% as moderate.'>moderate</em>.
+        plus_high:   The participation rate of %{rate}% is <em title='Participation above 80% is considered high.'>high</em>.
+
+      discussion:
+        nil:          "There aren't enough responses in this period to gauge the rate of change."
+        zero:         "<p class='info'>Your participation rate indicates the percentage of employees that have responded to the survey.</p> Your response rate is <em>stable</em>."
+        plus_low:     "<p class='info'>Your participation rate indicates the percentage of employees that have responded to the survey.</p> Your response rate is <em>stable</em>."
+        plus_medium:  "<p class='info'>Your participation rate indicates the percentage of employees that have responded to the survey.</p> For this period, you've had an increase in the response rate."
+        plus_high:    "<p class='info'>Your participation rate indicates the percentage of employees that have responded to the survey.</p> For this period, you've had a significant increase in the response rate."
+        minus_low:    "<p class='info'>Your participation rate indicates the percentage of employees that have responded to the survey.</p> Your response rate is slightly <em>dropping</em>."
+        minus_medium: "<p class='info'>Your participation rate indicates the percentage of employees that have responded to the survey.</p> Your response rate is <em>dropping</em>."
+        minus_high:   "<p class='info'>Your participation rate indicates the percentage of employees that have responded to the survey.</p> Your response rate has <em>dropped significantly</em>."
+
+  info:
+    configure:
+      employee_role: "The <em>employee role</em> determines if role specific questions will be asked of the employee. <p>For example, if you have questions specific to admin staff, selecting the admin role will ensure these questions are asked.</p>"
+      last_day_of_employment: "The <em>last day of employment</em> specifies the date by which the exit process should complete."
+      survey_due_date: "The <em>survey due date</em> specifies the date by which the exiting employee should have submitted their survey response.<p>An email reminder will be sent to the exiting employee prior to the survey due date if no exit survey has been completed by this date.</p>"
+      send_survey_to:
+        basic: "<em>Send the survey</em> specifies whether the survey is sent to the employee. <p>Chose to skip the survey step if you do not want the employee to complete the survey, or if an HR representative will need to complete the survey on the empoyee's behalf - for example, over a telephone call.</p>"
+        full:  "<em>Send the survey</em> specifies which individual will be emailed a link to the employee's survey.<p>This is usually sent directly to the employee, but in some cases it may be necessary for the reviewer to complete the survey on their behalf - for example, over a telephone call.</p>"
+      onboard_survey_due_date: "The <em>survey due date</em> specifies the date by which the onboarding employee should have submitted their survey response.<p>An email reminder will be sent to the employee prior to the survey due date if no onboarding survey has been completed by this date.</p>"
+      lifecycle_interview_due_date: "The <em>interview due date</em> specifies the date by which an interview should have been completed with the employee.<p>An email reminder will be sent to the reviewer prior to the interview due date if no interview has been completed.</p>"
+
+  emails:
+      exit:
+        sent_to_employee: "An Exit Survey has been sent to %NAME% with a required completion date of %SURVEY_DUE_DATE%. Once the Exit Survey response has been submitted, please complete an Exit Interview by %LAST_DAY_OF_EMPLOYMENT%."
+        sent_to_reviewer: "It has been requested that you enter %NAME%'s responses into the system on their behalf. Please do so by %SURVEY_DUE_DATE%, ensuring that the answers are those of the exiting employee's and not your own.\nOnce the Exit Survey response has been submitted, please complete an Exit Interview by %LAST_DAY_OF_EMPLOYMENT%."
+        sent_to_no_one: "No exit survey has been requested, however, you may still conduct an exit interview or complete the exit process. Please do so by %LAST_DAY_OF_EMPLOYMENT%. "
+        response_issued: "An Exit Survey has been sent to %NAME% with a required completion date of %SURVEY_DUE_DATE%. Once the exit survey has been submitted, please complete an Exit Interview by %LAST_DAY_OF_EMPLOYMENT%."
+        response_submitted: "An Exit Survey has already been completed by %NAME% and it is ready for your review. After reviewing the survey response, please complete %NAME%'s Exit Interview by %LAST_DAY_OF_EMPLOYMENT%."
+
+  session:
+    sign_out: Sign out
+
+  legals:
+    title: Terms and Policies
+    short_title: Legals
+
+  privacy:
+    title: Privacy Policy
+    short_title: Privacy
+
+  terms:
+    title: Terms of Use
+    short_title: Terms
+
+  confidentiality:
+    raw_data_extract_statement: For this survey, raw data extracts that include identifiable data will be made available to survey administrators at %{account_name}.
+
+  logo_alt_text: "%{account_name} Logo"
+
+  global_nav:
+    dashboard: Dashboard
+    surveys: Surveys
+    reports: Reports
+    action_plans: Action plans
+    academy: Academy
+    support: Support
+
+  account_menu:
+    account_admin: Account admin
+    my_profile: My profile
+
+  # Might need it's own file?
+  account_admin:
+    titleblock:
+      title: Account admin
+      back_to_users: Back to users
+    actions:
+      add_user: Add user
+      import_users: Import users
+      export_users: Export users
+      add_admin: Add administrator
+    users_import:
+      choose: Choose
+      analyze: Analyze
+      review: Review
+      apply: Apply
+      partial_import: Partial import
+      full_import: Full import
+
+  survey_admin:
+    titleblock:
+      title: Configure
+      back_to_surveys: Back to surveys
+    actions:
+      view_reports: View reports
+      add_admin: Add administrator
+      export_pdf: Export PDF
+      copy_link: Copy link
+      preview: Preview
+      create_report: Create report
+      export_kiosk_codes: Export kiosk codes
+
+  survey_status:
+    live: Live
+    draft: Draft
